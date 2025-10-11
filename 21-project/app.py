@@ -1,6 +1,4 @@
-def hello(name):
-    print(f"hello {name}")
+list = ["apple","kela","orange"]
 
-name = input("enter your name")
-
-hello(name)
+for i in list:
+    list[i]

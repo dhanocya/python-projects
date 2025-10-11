@@ -30,7 +30,8 @@ play()
 # now lets computer will choose the otion
 
 def computerTurn():
-    return random.randint(1,6)
+    return random.randint(1,3)
 
-computerTurn()
+hold = computerTurn()
 
+# evaluate the result
