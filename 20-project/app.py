@@ -9,23 +9,23 @@ print("-Paper Covers Rock")
 print("first 3 round will be the champion")
 
 def play():
-    print("round 1")
+    print("round ")
     print("make your choise:")
     print("Rock")
     print("paper")
     print("scissors")
 
-    choose = int(input("choose your otion 1 to 4"))
-    print(choose)
-
-    if choose == 1:
-        print("you choosed rock")
-    elif choose == 2:
-        print("you choosed paper")
-    else:
-        print("you choosed scissors")
-
 play()
+
+choose = int(input("choose your otion 1 to 4"))
+print(choose)
+
+if choose == 1:
+    print("you choosed rock")
+elif choose == 2:
+    print("you choosed paper")
+else:
+    print("you choosed scissors")
 
 # now lets computer will choose the otion
 
@@ -34,4 +34,18 @@ def computerTurn():
 
 hold = computerTurn()
 
-# evaluate the result
+def checkScore():
+    if hold == 1:
+        print("computer choosed rock")
+    elif hold == 2:
+        print("computer choosed paper")
+    else:
+        print("computer choosed scissors")
+
+checkScore()
+
+def answer():
+    if choose > hold:
+        print("player win")
+
+answer()
