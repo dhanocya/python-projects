@@ -1,27 +1,16 @@
-fruits = ["apple","banana","greapes","guvava","peachs"]
-print(fruits)
+print(":: age calculator ::")
 
-fruits.append("pineapple")
-print(fruits)
+def runAgain():
+    while True:
+        bornYear = int(input("enter your dob year ex: 2000 "))
+        currentYear = int(input("enter current year: ex: 2045 "))
 
-fruits.remove("banana")
-print(type(fruits))
+        if bornYear > currentYear:
+            print("please enter correct data.")
+            runAgain()
 
-# list are mutable and taples are imutable.
+        currentAge = currentYear - bornYear
 
-# declare taple
+        print(f"you are now {currentAge} old")
 
-box = ("ball","bat","toys","pen","book")
-
-print(type(box))
-
-# declare dictinary
-
-disc = {"name":"yuvraj","class":"nineth","city":"jaipur"}
-
-print(disc)
-print(type(disc))
-
-disc.update({"future": "dont no"})
-disc.pop({"name":"yuvraj"})
-print(disc)
+runAgain()
